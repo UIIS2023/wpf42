@@ -1,0 +1,39 @@
+﻿<Window x:Class="SalonLepote.Forme.FrmTermin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SalonLepote.Forme"
+        mc:Ignorable="d"
+         Height="450" Width="800">
+    <Grid>
+        <Grid HorizontalAlignment="Left" Height="434" Margin="462,0,0,0" VerticalAlignment="Center" Width="338">
+            <Grid.Background>
+                <ImageBrush ImageSource="/Forme/adb816b0f969aa79ca061f351d935ce8.jpg"/>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="215*"/>
+                <RowDefinition Height="219*"/>
+            </Grid.RowDefinitions>
+            <Button x:Name="Otkazi" Content="Otkazi" HorizontalAlignment="Left" Height="40" Margin="107,109,0,0" VerticalAlignment="Top"
+                    Width="142" Click="Otkazi_Click" Grid.Row="1" FontFamily="Century Gothic" FontSize="20" Background="{x:Null}" 
+                    BorderBrush="White" Foreground="White" FontWeight="Bold"/>
+            <Label Content="Dodajte ili izmenite podatke" HorizontalAlignment="Left" Height="66" Margin="56,90,0,0" VerticalAlignment="Top" Width="244" 
+                   FontFamily="Century Gothic" HorizontalContentAlignment="Center"/>
+            <Label Content="Termin" HorizontalAlignment="Left" Height="58" Margin="65,26,0,0" VerticalAlignment="Top" Width="220" FontSize="36" 
+                   FontFamily="Century Gothic" Foreground="White" FontWeight="Bold" HorizontalContentAlignment="Center"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="434" VerticalAlignment="Center" Width="462">
+            <Label Content="Vreme" HorizontalAlignment="Left" Height="42" Margin="68,167,0,0" VerticalAlignment="Top" Width="174"
+                   FontFamily="Century Gothic" FontSize="20"/>
+            <DatePicker x:Name="dpDatum" HorizontalAlignment="Left" Height="40" Margin="182,89,0,0" VerticalAlignment="Top" Width="160"
+                        FontFamily="Century Gothic" FontSize="16"/>
+            <Label Content="Datum" HorizontalAlignment="Left" Height="48" Margin="68,89,0,0" VerticalAlignment="Top"
+                   FontFamily="Century Gothic" FontSize="20"/>
+            <TextBox x:Name="txtVreme" HorizontalAlignment="Left" Height="40" Margin="182,167,0,0" TextWrapping="Wrap"  
+                     VerticalAlignment="Top" Width="160" FontFamily="Century Gothic" FontSize="16" SelectionBrush="#FFF4D6E0" SelectionTextBrush="#FFF4D6E0"/>
+            <Button x:Name="Sacuvaj" Content="Sacuvaj" HorizontalAlignment="Center" Height="40" Margin="0,324,0,0" 
+                    VerticalAlignment="Top" Width="142" Click="Sacuvaj_Click" Background="{x:Null}" BorderBrush="Black" FontFamily="Century Gothic" FontSize="20"/>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="1909bb80e75b089254e44a8ee0ccc0cd.jpg" />
+    <None Remove="Forme\adb816b0f969aa79ca061f351d935ce8.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="1909bb80e75b089254e44a8ee0ccc0cd.jpg" />
+    <Resource Include="Forme\adb816b0f969aa79ca061f351d935ce8.jpg" />
+  </ItemGroup>
+
+</Project>
